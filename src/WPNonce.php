@@ -53,25 +53,28 @@ class WPNonce implements ISecurityToken
     /**
      * Create a token for a url
      *
-     * @param string $resourceToProtect The url being secured.
+     * @param string          $urlToProtect The url being secured.
+     * @param string|optional $name         The name to be given to the nonce
      *
      * @return string
      */
-    function createTokenUrl($resourceToProtect)
+    function createTokenUrl($urlToProtect,$name='')
     {
-
+        $protected_url = wp_nonce_url($urlToProtect, 'trash-post_'. 1, $name);
+        return $protected_url;
     }
 
     /**
      * Verify a token to see if its valid
      *
-     * @param string $nonceToVerify The token being verified.
+     * @param string                                    $nonceToVerify The token being verified.
+     * @param string|optional The action to be verified $action        The action to be verified
      *
      * @return false|int False if the token is invalid, 1 if the token is valid
      */
-    function verifyToken($nonceToVerify)
+    function verifyToken($nonceToVerify, $action=null)
     {
-
+        return wp_verify_nonce($nonceToVerify, $action);
     }
 
     /**
@@ -83,7 +86,7 @@ class WPNonce implements ISecurityToken
      */
     function issueTokenWarning($nonceAttribute)
     {
-
+        wp_nonce_ays($nonceAttribute);
     }
 
     /**
@@ -98,6 +101,7 @@ class WPNonce implements ISecurityToken
      */
     function generateSecureFormField($fieldAction='', $fieldName='', $referer=true, $echo=true)
     {
-
+        $secureField =  wp_nonce_field($fieldAction, $fieldName, $referer, $echo);
+        return $secureField;
     }
 }
