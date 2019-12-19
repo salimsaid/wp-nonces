@@ -1,0 +1,15 @@
+{
+    "name": "salimsaid/clean-wp-nonces",
+    "description": "A clean OOP implementation of the Wordpress Nonce library",
+    "type": "library",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "salimsaid2",
+            "email": "saliimsaid@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
