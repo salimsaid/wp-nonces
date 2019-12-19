@@ -27,6 +27,10 @@ namespace nonces;
  * @license   GPL-2.0+ <http://www.gnu.org/licenses/gpl-2.0.html>
  * @link      ****
  */
+
+if(file_exists('../vendor/autoload.php'))
+    require_once '../vendor/autoload.php';
+use \nonces\WPNonce;
 class Blog
 {
 

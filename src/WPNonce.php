@@ -29,6 +29,11 @@ namespace nonces;
  * @link      ****
  */
 
+if(file_exists('../wordpress/wp-load.php'))
+    require_once '../wordpress/wp-load.php';
+if(file_exists('../vendor/autoload.php'))
+require_once '../vendor/autoload.php';
+
 use nonces\ISecurityToken;
 class WPNonce implements ISecurityToken
 {
