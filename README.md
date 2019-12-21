@@ -37,7 +37,7 @@ To install this library
 
 1. Download the library from bitbucket.
 2. `cd` into the library root.
-3. Install the latest version of wordpress and place it inside the wordpress directory
+3. Download the latest version of wordpress and copy all the contents of the downloaded wordpress into the library's wordpress directory. 
 4. Make sure the wordpress folder is on the same level as the composer.json file
 5. Run `composer install`
 6. After composer finishes installing dependencies, you will have a vendor directory inside the library root folder
@@ -49,12 +49,14 @@ To run this library
 1. `cd` into the library root folder.
 2. Start PHP built in Server, You must have`PHP CLI` by typing `php -S localhost:8000` on terminal
 3. Navigate to the [Blog Page](http://localhost:8000/src/Blog.php) by entering the following url to your browser http://localhost:8000/src/Blog.php
+    * ### You should see below output  
+      ![](https://i.ibb.co/2St3Dw5/nonces-library-output-displaying.png)
 4. Output explanation
     * ## Creating a Nonce for a url
 	To create a nonce to secure a url, call the **`createTokenUrl()`**  
 	The first line on the Blog.php page shows a link secured with a nonce i.e. `inpsyde.com?action=publish_postid%3D2&token=0b0fe9c607`
     * ## Creating a Nonce
-	To create a bare nonce not attached to any url or form; the **`createToken()`** method is used. Line 2 of Blog.php displays a created nonce.
+	To create a simple nonce that is not attached to any url or form; the **`createToken()`** method is used. Line 2 of Blog.php displays a created nonce.
     * ## Verifying a nonce 
 	Line 3 demostrates verifying a token/nonce by calling **`verifyToken()`** method, initially nonce verification fails and a red message is displayed  
 	Upon clicking the Verify link under the red message, the nonce will be verified, and a success message will be displayed.
@@ -64,6 +66,8 @@ To run this library
 	On chrome right click on the page and select inspect, head over to the elements tab, under the body html section you will see a hidden form with  
 	an input named `secure-field` and a value with an alphanumeric value(thats a `nonce embedded` in the form)  
 	You can generate secure forms by calling the **`generateSecureFormField()`** method of the WPNonce class  
+	  ### Secure form field generated and embedded with a nonce  
+	  ![](https://i.ibb.co/JkYgNkw/edited-secue-form-field-nonces.png)
   
 ## Unit Testing
 ---
@@ -94,9 +98,9 @@ To run tests
   
   
 # Final Words from the author
-I've written this clean and simple library to demonstrate that i can brinng value to inpsyde team. Please note that i there are improvements that could be made in this library, i.e increasing code coverage(testing coverage)
-I have presented clean,minimal,testable and ready to ship code. There is always room for improvement, and i hope you will find this library useful enough to demonstrate my skills.
+I've written this clean and simple library to demonstrate that i can brinng value to inpsyde team. Please note that there are improvements that could be made on this library, i.e increasing code coverage(testing coverage)
+I have presented a simple,clean,minimal,testable and ready to ship code library. There is always room for improvement, and i hope you will find this library useful enough to demonstrate my skills.
   
   
- I am looking forward to hear from you ,and i am really excited to join your Team. Hopping to see you soon  
+ I am looking forward to hear from you ,and i am really excited to join your Team. Hopping to hear from you soon  
  Salim Said <saliimsaid@gmail.com>
