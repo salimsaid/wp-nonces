@@ -1,0 +1,5 @@
+/vendor/
+/wordpress/
+!wordpress/.gitkeep 
+.idea/
+composer.lock
