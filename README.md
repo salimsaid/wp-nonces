@@ -98,7 +98,7 @@ To run tests
   
   
 # Final Words from the author
-I've written this clean and simple library to demonstrate that i can brinng value to inpsyde team. Please note that there are improvements that could be made on this library, i.e increasing code coverage(testing coverage)
+I've written this clean and simple library to demonstrate that i can brinng value to your team. Please note that there are improvements that could be made on this library, i.e increasing code coverage(testing coverage)
 I have presented a simple,clean,minimal,testable and ready to ship code library. There is always room for improvement, and i hope you will find this library useful enough to demonstrate my skills.
   
   
