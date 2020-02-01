@@ -1,4 +1,6 @@
-   ![](https://i.ibb.co/bKHWjZn/wp-clean-nonces-logo.png)  
+  <p align="center">
+  <img width="341" height="187" src="https://i.ibb.co/bKHWjZn/wp-clean-nonces-logo.png">
+</p>  
    
 
 A clean Object Oriented implementation of the wordpress nonce library.  
