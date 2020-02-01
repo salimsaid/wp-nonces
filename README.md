@@ -98,8 +98,8 @@ To run tests
   
   
 # Final Words from the author
-I've written this clean and simple library to demonstrate that i can brinng value to your team. Please note that there are improvements that could be made on this library, i.e increasing code coverage(testing coverage)
-I have presented a simple,clean,minimal,testable and ready to ship code library. There is always room for improvement, and i hope you will find this library useful enough to demonstrate my skills.
+I've written this clean and simple library to create an OOP wrapper around the wordpress nonces library. Please note that there are improvements that could be made on this library, i.e increasing code coverage(testing coverage)
+I have presented a simple,clean,minimal,testable and ready to ship code library. There is always room for improvement, and i hope you will find this library useful enough to use in your project. Please create a PR if you need to add features.
   
   
  I am looking forward to hear from you ,and i am really excited to join your Team. Hopping to hear from you soon  
