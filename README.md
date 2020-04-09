@@ -104,5 +104,4 @@ I've written this clean and simple library to create an OOP wrapper around the w
 I have presented a simple,clean,minimal,testable and ready to ship code library. There is always room for improvement, and i hope you will find this library useful enough to use in your project. Please create a PR if you need to add features.
   
   
- I am looking forward to hear from you ,and i am really excited to join your Team. Hopping to hear from you soon  
- Salim Said <saliimsaid@gmail.com>
+ If anything breaks or if you have a question, please reach out via <saliimsaid@gmail.com>
